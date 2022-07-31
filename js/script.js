@@ -52,3 +52,14 @@ document.addEventListener('DOMContentLoaded', function(){
 console.log(5);
 
 window.onscroll = () => console.log('Scrolling...');
+
+// Seleccionar elementos y asociarles un evento
+const btnEnviar = document.querySelector('.boton--primario');
+btnEnviar.addEventListener('click', (evento) => {
+    console.log(evento);
+    evento.preventDefault();
+
+    // Validar un formulario
+
+    console.log('Enviando formulario...');
+})
